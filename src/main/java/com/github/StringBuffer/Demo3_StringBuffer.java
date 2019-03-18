@@ -1,4 +1,4 @@
-package stringBuffertest;
+package com.github.StringBuffer;
 
 import java.util.Scanner;
 

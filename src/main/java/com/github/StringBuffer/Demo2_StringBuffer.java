@@ -1,4 +1,4 @@
-package stringBuffertest;
+package com.github.StringBuffer;
 
 /**
  * @ Author: 瞎驴
