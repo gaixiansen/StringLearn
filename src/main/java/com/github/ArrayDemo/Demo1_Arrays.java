@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @ Date: 2019/3/18 20:33
  * @ Version 1.0
  */
-public class Demo1_Array {
+public class Demo1_Arrays {
 
     public static void main(String[] args) {
         int[] a = {11,33,22,55,44};

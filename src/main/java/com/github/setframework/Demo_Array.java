@@ -1,6 +1,6 @@
 package com.github.setframework;
 
-public class Demo1 {
+public class Demo_Array {
 	public static void main(String[] args) {
 		Student[] arry = new Student[5];
 		for (int i=0; i<arry.length;i++) {

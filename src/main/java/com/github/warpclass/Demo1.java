@@ -11,6 +11,5 @@ public class Demo1 {
         System.out.println("60=" + a);
         Byte b = Byte.parseByte("101", 2);
         System.out.println(b);
-
     }
 }
