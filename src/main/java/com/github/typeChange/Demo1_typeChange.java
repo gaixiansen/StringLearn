@@ -10,7 +10,5 @@ public class Demo1_typeChange {
 		System.out.println((int) b);
 		String C = "123";
 		System.out.println(Integer.parseInt(C));
-
-
 	}
 }
