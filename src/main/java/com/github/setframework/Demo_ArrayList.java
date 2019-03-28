@@ -2,6 +2,7 @@ package com.github.setframework;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class Demo_ArrayList {
 	/**
@@ -11,7 +12,31 @@ public class Demo_ArrayList {
 	public static void main(String[] args) {
 //		demo1();
 //		demo2();
-		demo3();
+//		demo3();
+		demo4();
+	}
+
+	public static void demo4() {
+		ArrayList newlit = new ArrayList();
+		ArrayList lit = new ArrayList();
+		lit.add("a");
+		lit.add("b");
+		lit.add("c");
+		lit.add("a");
+		lit.add("b");
+		Iterator it = lit.iterator();
+		while (it.hasNext()){
+			Object ob = it.next();
+			if (!newlit.contains(ob)){
+				newlit.add(ob);
+			}
+		}
+		System.out.println(newlit);
+		Iterator it2 = newlit.iterator();
+		while (it2.hasNext()){
+			Object obiect = it2.next();
+			System.out.println(obiect);
+		}
 	}
 
 	public static void demo3() {
