@@ -32,4 +32,10 @@ public class Student {
 			", age=" + age +
 			'}';
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Student s = (Student) obj;
+		return this.name.equals(s.name) &&  (this.age == s.age);
+	}
 }

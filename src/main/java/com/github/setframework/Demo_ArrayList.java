@@ -19,11 +19,18 @@ public class Demo_ArrayList {
 	public static void demo4() {
 		ArrayList newlit = new ArrayList();
 		ArrayList lit = new ArrayList();
-		lit.add("a");
-		lit.add("b");
-		lit.add("c");
-		lit.add("a");
-		lit.add("b");
+//		lit.add("a");
+//		lit.add("b");
+//		lit.add("c");
+//		lit.add("a");
+//		lit.add("b");
+		lit.add(new Student("jack", 23));
+		lit.add(new Student("jack", 23));
+		lit.add(new Student("jack", 23));
+		lit.add(new Student("peter", 24));
+		lit.add(new Student("peter", 24));
+		lit.add(new Student("peter", 24));
+		lit.add(new Student("peter", 24));
 		Iterator it = lit.iterator();
 		while (it.hasNext()){
 			Object ob = it.next();
