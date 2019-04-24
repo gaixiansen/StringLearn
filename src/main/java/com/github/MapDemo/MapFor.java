@@ -1,6 +1,7 @@
 package com.github.MapDemo;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -8,7 +9,7 @@ import java.util.Set;
  * @ProjectName: JavaLearn
  * @Package: com.github.MapDemo
  * @ClassName: MapFor
- * @Description: 利用entry遍历map
+ * @Description: 利用遍历map
  * @Author:
  * @CreateDate: 2019/4/14 21:14
  * @UpdateUser:
@@ -18,6 +19,30 @@ import java.util.Set;
  */
 public class MapFor {
 	public static void main(String[] args) {
+//		Demo1();
+		Demo2();
+	}
+
+	/**
+	 * 利用map.keySet()获取到key，再利用key去获取value
+	 */
+	public static void Demo2() {
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		map.put("jack",23);
+		map.put("rose",24);
+		map.put("peter",25);
+		Set<String> ks = map.keySet();
+		System.out.println(ks);
+		for (Iterator<String> iterator = ks.iterator(); iterator.hasNext(); ) {
+			String key = iterator.next();
+			System.out.println(key + "=" + map.get(key));
+		}
+	}
+
+	/**
+	 * 利用entry先拿到键值对对象遍历map
+	 */
+	public static void Demo1() {
 		Map<String,Integer> map = new HashMap<String,Integer>();
 		map.put("jack", 23);
 		map.put("rose", 24);
@@ -28,6 +53,5 @@ public class MapFor {
 			System.out.println("key="+stringIntegerEntry.getKey()+",value=" + stringIntegerEntry.getValue());
 
 		}
-
 	}
 }
