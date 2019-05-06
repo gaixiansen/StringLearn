@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @ Author: 瞎驴
  * @ Date: 2019/3/18 20:33
  * @ Version 1.0
+ * @ description Arrays工具类是针对数组操作的类
  */
 public class Demo1_Arrays {
 
