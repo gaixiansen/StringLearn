@@ -2,7 +2,7 @@ package com.github.exception;
 
 /**
  * @ Author: 瞎驴
- * @ description:
+ * @ description: 自己手动抛出异常
  * @ Date: 2019/5/7 23:41
  * @ Version 1.0
  */
