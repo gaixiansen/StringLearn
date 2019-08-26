@@ -1,4 +1,4 @@
-package com.github.FileOperation;
+package com.github.bytestream;
 
 public class GetFileName {
     public static void main(String[] args) {
