@@ -1,4 +1,4 @@
-package com.github.jdbc;
+package com.github.jdbc.jdbedemo;
 
 import org.junit.Test;
 
@@ -6,7 +6,9 @@ import java.sql.*;
 import java.util.Properties;
 
 public class Demo2 {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+
+    @Test
+    public void test1() throws SQLException, ClassNotFoundException {
 //        demo1();
         //1、注册驱动
 //        DriverManager.registerDriver(new Driver());
@@ -35,8 +37,8 @@ public class Demo2 {
         conn.close();
 
     }
-
-    public static void demo1() throws ClassNotFoundException, SQLException {
+    @Test
+    public void demo1() throws ClassNotFoundException, SQLException {
         //1、注册驱动
 //        DriverManager.registerDriver(new Driver());
         // 因为com.mysql.jdbc.Driver中的静态代码块调用了new Driver(),所以以下方式避免了多次注册驱动

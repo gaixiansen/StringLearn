@@ -1,4 +1,4 @@
-package com.github.jdbc;
+package com.github.jdbc.jdbedemo;
 
 import com.mysql.jdbc.Driver;
 import java.sql.*;
