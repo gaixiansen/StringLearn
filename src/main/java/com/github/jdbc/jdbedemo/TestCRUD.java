@@ -22,14 +22,14 @@ public class TestCRUD {
         //得到执行sql语句的对象Statement
         Statement stmt = conn.createStatement();
         //执行sql语句，并返回结果
-        ResultSet rs = stmt.executeQuery("select * from users");
+        ResultSet rs = stmt.executeQuery("select * from user");
         List<User> list = new ArrayList<User>();
         //处理结果
         while(rs.next()){
             User u = new User();
             u.setId(rs.getInt("id"));
             u.setName(rs.getString("name"));
-            u.setPassword(rs.getString("password"));
+            u.setPassword(rs.getString("passwd"));
             u.setEmail(rs.getString("email"));
             u.setBirthday(rs.getDate("birthday"));
             list.add(u);
@@ -54,7 +54,7 @@ public class TestCRUD {
         //得到执行sql语句的对象Statement
         Statement stmt = conn.createStatement();
         //执行sql语句，并返回结果
-        ResultSet rs = stmt.executeQuery("select password,email,birthday,id,name from users");
+        ResultSet rs = stmt.executeQuery("select password,email,birthday,id,name from user");
         List<User> list = new ArrayList<User>();
 
         rs.afterLast();
@@ -88,7 +88,7 @@ public class TestCRUD {
         //得到执行sql语句的对象Statement
         Statement stmt = conn.createStatement();
         //执行sql语句，并返回结果
-        int i = stmt.executeUpdate("INSERT INTO users VALUES(4,'tom','123','tom@163.com','2015-09-28')");
+        int i = stmt.executeUpdate("INSERT INTO user VALUES(5,'tom','123','tom@163.com','2015-09-28')");
         if(i>0){
             System.out.println("success");
         }
@@ -126,7 +126,7 @@ public class TestCRUD {
         //加载驱动
         Class.forName("com.mysql.jdbc.Driver");
         //获取连接Connection
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/day06?user=root&password=abc");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?user=root&password=udn100@HW");
         //得到执行sql语句的对象Statement
         Statement stmt = conn.createStatement();
         //执行sql语句，并返回结果

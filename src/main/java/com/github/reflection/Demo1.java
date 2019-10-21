@@ -1,5 +1,7 @@
 package com.github.reflection;
 
+import com.github.reflection.bean.Person;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -12,7 +14,7 @@ public class Demo1 {
 
 
         // 用法二：实例化Class类的对象
-        Class<?> aClass1 = Class.forName("com.github.reflection.Person");  //获取类对象
+        Class<?> aClass1 = Class.forName("com.github.reflection.bean.Person");  //获取类对象
         Class<?> aClass2 = new Person("peter", 24).getClass();
         System.out.println(aClass1);
         System.out.println(aClass2);
