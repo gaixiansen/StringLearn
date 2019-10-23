@@ -21,7 +21,7 @@ public class forRemove {
         list.add("c");
         list.add("e");
 //        Demo1(list);
-//        Demo2(list);
+//        Demo2_Application(list);
         for (String s:
              list) {
             if ("b".equals(s));

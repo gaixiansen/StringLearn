@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Array2Collection {
     public static void main(String[] args) {
-//        Demo2();
+//        Demo2_Application();
 //        Demo1();
         Demo3();
     }
