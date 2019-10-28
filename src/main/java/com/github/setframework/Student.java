@@ -27,7 +27,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student{" +
+		return "StudentImpl{" +
 			"name='" + name + '\'' +
 			", age=" + age +
 			'}';

@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * @ProjectName: JavaLearn
  * @Package: com.github.MapDemo
- * @ClassName: Student
+ * @ClassName: StudentImpl
  * @Description:
  * @Author:
  * @CreateDate: 2019/4/14 22:40
@@ -33,7 +33,7 @@ public class Student implements Comparable<Student>{
 
 	@Override
 	public String toString() {
-		return "Student{" +
+		return "StudentImpl{" +
 			"name='" + name + '\'' +
 			", age=" + age +
 			'}';
